@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Press Start 2P', 'Dosis', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.fadeIn {
+    list-style: none;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-45%);
+    animation-name: fadeIn;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1; 
+    -moz-animation-name: fadeIn;
+    -moz-animation-duration: 8s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: 1; 
+    -webkit-animation-name: fadeIn;
+    -webkit-animation-duration: 8s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: 1; 
+    -o-animation-name: fadeIn;
+    -o-animation-duration: 8s;
+    -o-animation-timing-function: linear;
+    -o-animation-iteration-count: 1; 
+    opacity: 1;
+}
+
+.fadeIn li {
+    display: inline-block;
+    margin-right: 20px;
+    font-weight: 200;
+    font-size: 4rem;
+}
+
+.fadeIn li:last-child {
+    margin-right: 0;
+}
+
+.button1 {
+	background-color: #000000;
+    padding: 0.7rem 1rem;
+    font-family: 'Press Start 2P', 'Dosis', sans-serif;
+	font-size: 0.8rem;
+	display: inline-block;
+	margin: 0 auto;
+	width: 200px;
+	border: 2px solid #ffffff;
+	color: #ffffff;
+	cursor: pointer;
+	transition: background-color 1.2s, color 0.3s linear;
+    overflow: hidden;
+    position: absolute;
+    top: 60%;
+    left: 40%;
+    transform: translateX(-40%) translateY(-60%);
+    animation: fadeButton1 5s ease-in;
+    animation-delay: 0s, 3s;
+    -moz-animation-delay: 0s, 3s;
+    -webkit-animation-delay: 0s, 3s;
+    -o-animation-delay: 0s, 3s;
+	/*border-radius: 5px;*/
+}
+
+
+.button2 {
+	background-color: #000000;
+    padding: 0.7rem 1rem;
+    font-family: 'Press Start 2P', 'Dosis', sans-serif;
+	font-size: 0.8rem;
+	display: inline-block;
+	margin: 0 auto;
+	width: 200px;
+	border: 2px solid #ffffff;
+	color: #ffffff;
+	cursor: pointer;
+	transition: background-color 1.2s, color 0.3s linear;
+    overflow: hidden;
+    position: absolute;
+    top: 60%;
+    left: 60%;
+    transform: translateX(-60%) translateY(-60%);
+    animation: fadeButton2 5s ease-in;
+    animation-delay: 0s, 6s;
+    -moz-animation-delay: 0s, 6s;
+    -webkit-animation-delay: 0s, 6s;
+    -o-animation-delay: 0s, 6s;
+	/*border-radius: 5px;*/
+}
+
+.button1::before, .button2::before {
+	margin: auto;
+	content: '';
+	border-radius: 50%;
+	width: 50%;
+	transition: box-shadow 1.2s linear;
+	z-index: -1;
+}
+
+.button1:hover, .button2:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.button1::before, .button2:hover::before {
+	box-shadow: inset 0 0 0 160px #ffffff;
+}
+ .tab {
+    padding-left: 5em;
+ }
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: -10%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+    width: 100%;
+    overflow: initial;
+    background-color: #0000002d;
+}
+
+.modal-content {
+    background-color: #ffffff;
+    margin: 20% auto;
+    width: 75%;
+    line-height: 1.3em;
+    box-shadow: 0 5px 8px 0 #f7f7f76b,0 10px 20px 0 #f7f7f76b;
+    font-family: 'Press Start 2P', 'Dosis', sans-serif;
+    font-size: 1rem;
+    color: #000000;
+    animation-name: modalOpen;
+    animation-duration: 2s;
+    animation-delay: 0s, 2s;
+    -moz-animation-delay: 0s, 2s;
+    -webkit-animation-delay: 0s, 2s;
+    -o-animation-delay: 0s, 2s;
+}
+
+.modal-content li {
+    list-style: none;
+}
+
+.modalHeader h2{
+    margin: 0;
+}
+
+.modalHeader {
+    background-color: #4b4b4b;
+    padding: 15px;
+    color: #ffffff;
+}
+
+.modalBody {
+    padding: 10px 20px;
+}
+
+.modalFooter h2{
+    margin: 0;
+}
+
+.modalFooter {
+    background-color: #4b4b4b;
+    padding: 15px;
+    color: #ffffff;
+}
+
+.closeBtn {
+    color: #ffffff;
+    float: right;
+    font-size: 40px;
+}
+
+.closeBtn:hover, .closeBtn:focus {
+    color: #777777;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@-moz-keyframes fadeIn { 
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@-webkit-keyframes fadeIn { 
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@-o-keyframes fadeIn { 
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeButton1 {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@-moz-keyframes fadeButton1 { 
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@-webkit-keyframes fadeButton1 { 
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@-o-keyframes fadeButton1 { 
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeButton2 {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@-moz-keyframes fadeButton2 { 
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@-webkit-keyframes fadeButton2 { 
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@-o-keyframes fadeButton2 { 
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes modalOpen {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@-moz-keyframes modalOpen { 
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@-webkit-keyframes modalOpen { 
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@-o-keyframes modalOpen { 
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
